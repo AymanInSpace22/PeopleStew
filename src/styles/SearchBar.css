@@ -1,0 +1,112 @@
+
+.group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    max-width: 190px;
+    margin: 0 auto;
+  }
+  
+  .input2 {
+    height: 40px;
+    line-height: 28px;
+    padding: 0 1rem;
+    width: 100%;
+    outline: none;
+    background: linear-gradient(
+      180deg,
+      rgb(56, 56, 56) 0%,
+      rgb(36, 36, 36) 66%,
+      rgb(41, 41, 41) 100%
+    );
+    color: #fff;
+    transition: 0.3s ease;
+    border: 2px solid;
+    border-image: conic-gradient(#ff5900, #ff5900, #ff5900) 1;
+    margin-bottom: 0.5rem;
+    padding-left: 2.5rem; /* Adjust the padding as needed */
+  }
+  
+  .icon {
+    position: absolute;
+    left: 0.5rem; /* Adjust the positioning as needed */
+    top: 40%; /* Align the icon vertically centered */
+    transform: translateY(-50%); /* Adjust the vertical alignment */
+    fill: #fff;
+    width: 1rem;
+    height: 1rem;
+  }
+  
+  .search-button {
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    background: #ff5900;
+    color: black;
+    padding: 0.25em 5.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #66da4300;
+    border-radius: 5em;
+    overflow: hidden;
+    transition: all 0.2s;
+    cursor: pointer;
+    width: 100%; /* Add this property to make the button fill the width */
+    box-sizing: border-box; /* Add this property for consistent sizing */
+  }
+  
+  .search-button:hover {
+    border: 2px solid #ff5900;
+    background: #00000000;
+    color: #ff5900;
+  }
+  
+  .search-button:active {
+    border: 2px solid #66da4300;
+    background: #ff5900;
+    color: black;
+  }
+
+  .SearchBarHeading{
+    color:#ff5900;
+    text-shadow: 2px 2px #ff0000;
+  }
+  
+
+
+
+.search-results {
+    border: 5px solid #ff5900;
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+  }
+  
+  .search-results h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    justify-content: center;
+    
+  }
+  
+  .search-results p {
+    display: table-row;
+  }
+  
+  .search-results p > span {
+    display: table-cell;
+    padding: 0.5rem;
+    border-bottom: 1px solid #ff5900;
+  }
+  
+  .search-results p > span:first-child {
+    font-weight: bold;
+  }
+  
+  .search-results p:last-child > span {
+    border-bottom: none;
+  }
+  
